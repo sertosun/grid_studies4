@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  height: 400px;
+  padding: 10px;
+  grid-template-areas:
+    "logo menubar menubar menubar menubar menubar"
+    "title title title title title title"
+    "title title title title title title"
+    "sidebar sidebar content content content content"
+    "sidebar sidebar content content content content"
+    "sidebar sidebar content content content content"
+    "sidebar sidebar content content content content"
+    "footer footer footer footer footer footer ";
+}
+
+.grid-container > div {
+  place-content: center center;
+  color: white;
+  display: grid;
+}
+
+.logo {
+  grid-area: logo;
+  background-color: orangered;
+}
+
+.menubar {
+  grid-area: menubar;
+  background-color: green;
+}
+
+.title {
+  grid-area: title;
+  background-color: blue;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: green;
+}
+
+.content {
+  grid-area: content;
+  background-color: orange;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: black;
+}
